@@ -1,0 +1,16 @@
+CLUB EL CRUCE - SITIO WEB
+
+Archivos:
+- index.html  -> la página web
+- actividades-club-el-cruce.pdf -> folleto completo enlazado desde la página
+
+Para publicar en GitHub Pages:
+1. Cree un repositorio público en GitHub.
+2. Suba AMBOS archivos al nivel principal del repositorio.
+3. Abra Settings > Pages.
+4. Elija publicar desde una rama (Deploy from a branch), rama main y carpeta /(root).
+5. Guarde. GitHub mostrará la URL pública.
+
+Para actualizar horarios/precios:
+- Edite index.html y vuelva a subirlo reemplazando el anterior.
+- Si solo cambia el folleto, reemplace actividades-club-el-cruce.pdf conservando exactamente ese nombre.
