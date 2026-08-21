@@ -18,10 +18,13 @@
     a{color:inherit;text-decoration:none}
     .wrap{width:min(1120px,92%);margin:auto}
     header{
-      background:linear-gradient(135deg,var(--navy),#0d3c72 55%,var(--blue));
-      color:white;padding:48px 0 38px;position:relative;overflow:hidden
+      background:
+        linear-gradient(90deg,rgba(4,24,49,.90) 0%,rgba(7,42,80,.72) 48%,rgba(7,42,80,.20) 100%),
+        url("hero-club.jpg") center 42%/cover no-repeat;
+      color:white;padding:54px 0 44px;position:relative;overflow:hidden;min-height:430px;display:flex;align-items:center
     }
-    header:after{content:"";position:absolute;right:-80px;top:-100px;width:300px;height:300px;border:55px solid rgba(255,255,255,.08);border-radius:50%}
+    header .wrap{position:relative;z-index:2;padding-right:250px}
+    .hero-logo{position:absolute;right:4.5%;top:34px;width:190px;height:190px;object-fit:contain;border-radius:50%;background:rgba(255,255,255,.93);padding:14px;box-shadow:0 16px 40px rgba(0,0,0,.28);z-index:3}
     .eyebrow{font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.85;font-size:.85rem}
     h1{font-size:clamp(2.2rem,7vw,4.8rem);line-height:.98;margin:.35rem 0 1rem;max-width:850px}
     .lead{font-size:1.08rem;max-width:760px;color:#e6eef7}
@@ -57,12 +60,15 @@
     footer{padding:34px 0 90px;color:var(--muted);font-size:.92rem}
     .float-wa{position:fixed;right:18px;bottom:18px;background:#22c55e;color:white;padding:14px 17px;border-radius:999px;font-weight:900;box-shadow:0 14px 35px rgba(0,0,0,.18);z-index:20}
     .notice{background:#fff8df;border:1px solid #f0d47b;border-radius:14px;padding:12px 14px;color:#665316;margin-top:18px}
-    @media(max-width:850px){.grid{grid-template-columns:1fr 1fr}.cta{align-items:flex-start;flex-direction:column}}
-    @media(max-width:560px){header{padding-top:36px}.grid,.benefits{grid-template-columns:1fr}.card{padding:17px}.section-title{display:block}.section-title p{margin-top:4px}}
+    .recreativas-title{display:flex;align-items:center;gap:12px}
+    .recreativas-mark{display:inline-flex;align-items:center;gap:5px;background:#eaf3fb;border:1px solid #cfe1f2;color:var(--blue);padding:7px 10px;border-radius:14px;font-size:1.3rem;box-shadow:0 6px 18px rgba(10,42,82,.08)}
+    @media(max-width:850px){header .wrap{padding-right:0}.hero-logo{width:120px;height:120px;right:4%;top:22px;opacity:.96}.grid{grid-template-columns:1fr 1fr}.cta{align-items:flex-start;flex-direction:column}}
+    @media(max-width:560px){header{padding:110px 0 38px;min-height:500px;background-position:center top}.hero-logo{width:92px;height:92px;left:4%;right:auto;top:14px}.grid,.benefits{grid-template-columns:1fr}.card{padding:17px}.section-title{display:block}.section-title p{margin-top:4px}}
   </style>
 </head>
 <body>
 <header>
+  <img class="hero-logo" src="logo-club.jpg" alt="Escudo del Club Social y Deportivo El Cruce">
   <div class="wrap">
     <div class="eyebrow">Club Social y Deportivo El Cruce</div>
     <h1>Todo el club, en un solo lugar.</h1>
@@ -123,7 +129,7 @@
 </section>
 
 <section id="recreativas">
-  <div class="section-title"><div><h2>🛼 Recreativas</h2></div></div>
+  <div class="section-title"><div class="recreativas-title"><span class="recreativas-mark" aria-hidden="true">🛼 🧘</span><h2>Recreativas</h2></div></div>
   <div class="grid">
     <article class="card"><h3>Patín artístico</h3><div class="meta">Mayores de 6 años<br>Martes 15:30 hs y jueves 19 hs</div><div class="price">1 vez $19.000 · 2 veces $23.000</div></article>
     <article class="card"><h3>Acrobacia en telas</h3><div class="meta">Mayores de 6 años<br>Lunes y miércoles 20:30 hs</div><div class="price">$33.000</div></article>
@@ -194,7 +200,7 @@
   <div class="wrap">
     <b>Club Social y Deportivo El Cruce</b><br>
     Av. Sesquicentenario 270, Los Polvorines · Instagram: @club_elcruce · WhatsApp: 11 3024 8506<br><br>
-    Información publicada según el folleto de actividades provisto por el club. Si cambian horarios o aranceles, actualizá este archivo antes de volver a publicarlo.
+    Información publicada según el folleto de actividades provisto por el club. Consultar horarios o aranceles actualizados vía WhatsApp.
   </div>
 </footer>
 
